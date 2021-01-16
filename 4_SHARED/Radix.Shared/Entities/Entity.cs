@@ -1,8 +1,9 @@
 using System;
+using Radix.Shared.Interfaces;
 
 namespace Radix.Shared.Entities
 {
-    public class Entity
+    public class Entity: IEntity
     {
         public Entity()
         {
