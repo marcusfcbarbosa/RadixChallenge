@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Radix.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Radix.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Radix.Shared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Radix.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../4_SHARED/Radix.Shared/Radix.Shared.csproj",
+      "msbuildProject": "../../4_SHARED/Radix.Shared/Radix.Shared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Radix.Shared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Marcus\\.nuget\\packages\\": {},
@@ -37,7 +56,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Marcus\\Documents\\RADIX\\4_SHARED\\Radix.Shared\\Radix.Shared.csproj": {
+              "projectPath": "C:\\Users\\Marcus\\Documents\\RADIX\\4_SHARED\\Radix.Shared\\Radix.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
