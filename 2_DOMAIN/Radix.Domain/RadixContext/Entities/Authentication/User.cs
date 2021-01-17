@@ -7,7 +7,7 @@ namespace Radix.Domain.RadixContext.Entities.Authentication
         public string UserName { get; private set; }
         public string PassWord { get; private set; }
         public string Role { get; private set; }
-        private  User(){}
+        private User() { }
         public User(string userName, string passWord, string role)
         {
             UserName = userName;

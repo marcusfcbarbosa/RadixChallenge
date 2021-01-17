@@ -53,3 +53,9 @@ dotnet new webapi -n Radix.WebApi
 dotnet new classlib -n Radix.Domain
 dotnet new classlib -n Radix.Infra
 dotnet new classlib -n Radix.Shared
+dotnet new mstest -n Radix.Test
+dotnet new sln
+dotnet sln add
+dotnet add package Microsoft.EntityFrameworkCore --version 3.1.7
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 3.1.7
+dotnet add package Microsoft.EntityFrameworkCore.Tools  --version 3.1.7
